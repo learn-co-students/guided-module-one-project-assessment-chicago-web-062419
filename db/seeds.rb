@@ -1,0 +1,6 @@
+    Tutor.create(name: "Karen", subject:"Chemistry") 
+    Tutor.create(name: "Jess", subject:"Arabic")
+    Tutor.create(name: "Joseph", subject:"Torts")
+    Tutor.create(name: "Younghee", subject:"Korean")
+    Tutor.create(name: "Baron", subject: "Design" )
+    Tutor.create(name: "Paul", subject:"Astrology")  
