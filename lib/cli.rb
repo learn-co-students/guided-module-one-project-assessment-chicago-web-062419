@@ -9,9 +9,9 @@
       tutor_name = gets.chomp 
       appointment_date = get_a_time
       find_appointment(tutor_name, student, appointment_date)
-      # cancel_an_appointment(appointment_date)
       update_your_tutoring_session_time(appointment_date)
       see_my_appointment(student)
+      cancel_an_appointment(appointment_date)
    end 
 
    def insert_user_name(user_name) 
@@ -38,14 +38,6 @@
       puts "Wonderful! It's Tutor Time! #{tutor.name} will see you at #{appointment_date}!"
    end 
 
-   def cancel_an_appointment(appointment_date)
-
-      puts "What time was the appointment that you'd like to cancel?"
-      appointment_date = gets.chomp
-      Appointment.where(appointment_date:appointment_date).destroy_all
-      puts "Thank you! Your appointment has been cancelled."
-   end 
-
    def update_your_tutoring_session_time(appointment_date)
        puts "What time was the appointment that you'd like to change?"
        appointment_date = gets.chomp 
@@ -63,9 +55,16 @@
       p my_appointment
    end 
 
+   def cancel_an_appointment(appointment_date)
+      puts "What time was the appointment that you'd like to cancel?"
+      appointment_date = gets.chomp
+      Appointment.where(appointment_date:appointment_date).destroy_all
+      puts "Thank you! Your appointment has been cancelled."
+   end 
+
    module ActiveSupport
       class LogSubscriber
         def debug(*args, &block)
         end
       end
-    end
+   end
