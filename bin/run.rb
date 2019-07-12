@@ -4,4 +4,4 @@ require_relative '../config/environment'
 # cli.greet
 # end
 
-#p greet 
+greet

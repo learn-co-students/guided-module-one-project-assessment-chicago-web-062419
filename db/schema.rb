@@ -13,11 +13,9 @@
 ActiveRecord::Schema.define(version: 3) do
 
   create_table "appointments", force: :cascade do |t|
-    t.integer "students_id"
-    t.integer "tutors_id"
-    t.datetime "appointment_date"
-    t.index ["students_id"], name: "index_appointments_on_students_id"
-    t.index ["tutors_id"], name: "index_appointments_on_tutors_id"
+    t.string "appointment_date"
+    t.integer "student_id"
+    t.integer "tutor_id"
   end
 
   create_table "students", force: :cascade do |t|
@@ -30,3 +28,5 @@ ActiveRecord::Schema.define(version: 3) do
   end
 
 end
+
+
