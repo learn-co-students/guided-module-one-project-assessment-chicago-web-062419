@@ -1,0 +1,24 @@
+#New User or Exsisting User? 
+#If the name entered is one that we have seen referenced before we will say,"Welcome back,user!"
+#If it's a new user we would say "Welcome, user, we are glad you are here!"
+    
+
+   puts "What time would you like to meet?=-09tr32sa   
+
+#    tutor_time = gets.chomp 
+#    # tutor_time << @@all
+#    # #when Tutor.find_by = tutor_name print tutor.name & tutor_time
+#    puts "Awesome! You'll be meeting with #{tutor_name} at #{tutor_time}."
+# end 
+
+# def create_an_appointment
+#     #In order to create an appointment we need a #studentid, a #tutorid and an #appointmenttime. 
+#     Tutor = Tutor.find(name) 
+
+   # def find_student_id(user_name)
+   #    Student.all.collect do |student| 
+   #       if  student.name === us  er_name
+   #          student.id 
+   #       end 
+   #    end 
+   # end 
